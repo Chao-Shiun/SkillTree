@@ -9,6 +9,8 @@ namespace SkillTree.Controllers
 {
     public class MoneyController : Controller
     {
+        private SkillTreeHomeworkEntities db = new SkillTreeHomeworkEntities();
+
         // GET: Money
         public ActionResult Index()
         {
@@ -17,7 +19,7 @@ namespace SkillTree.Controllers
 
         public ActionResult List()
         {
-            return View();
+            return View(db.AccountBook.ToList());
         }
     }
 }
