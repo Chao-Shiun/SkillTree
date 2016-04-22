@@ -1,4 +1,5 @@
-﻿using SkillTree.Models;
+﻿using PagedList;
+using SkillTree.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,12 +15,14 @@ namespace SkillTree.Controllers
         // GET: Money
         public ActionResult Index()
         {
-            return View("Index");
+            return View();
         }
 
-        public ActionResult List()
+        [HttpGet]
+        public ActionResult List(int page = 1)
         {
-            return View(db.AccountBook.ToList());
+            var Accountdata = db.AccountBook.OrderBy(x => x.Dateee).ToPagedList(page, 10);
+            return View(Accountdata);
         }
     }
 }

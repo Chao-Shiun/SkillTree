@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<SkillTree.Models.AccountBook>
+@using PagedList
+@using PagedList.Mvc
 @{
+    var data = Model as IPagedList<SkillTree.Models.AccountBook>;
     Layout = "";
 }
 <table class="table table-hover">
@@ -51,3 +54,4 @@
         </tr>
     }
 </table>
+@Html.PagedListPager(list: data, generatePageUrl: page => Url.Action("Index", new { p = page }))
