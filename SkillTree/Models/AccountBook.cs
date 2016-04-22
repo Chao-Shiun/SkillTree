@@ -18,8 +18,10 @@ namespace SkillTree.Models
         [Display(Name = "類型")]
         public int Categoryyy { get; set; }
         [Display(Name = "金額")]
+        [DisplayFormat(DataFormatString ="{0:C0}")]
         public int Amounttt { get; set; }
         [Display(Name = "日期")]
+        [DisplayFormat(DataFormatString ="{0:yyyy/MM/dd}")]
         public System.DateTime Dateee { get; set; }
         [Display(Name = "註記")]
         public string Remarkkk { get; set; }
