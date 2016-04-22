@@ -5,6 +5,9 @@
 <table class="table table-hover">
     <tr>
         <th>
+            編號
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Categoryyy)
         </th>
         <th>
@@ -19,9 +22,13 @@
         <th></th>
     </tr>
 
+    @{
+        int i = 0;
+    }
     @foreach (var item in Model)
     {
         <tr>
+            <td>@(++i)</td>
             <td>
                 <div>
                     @Html.DisplayFor(modelItem => item.Categoryyy)
