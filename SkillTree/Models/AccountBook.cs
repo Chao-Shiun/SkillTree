@@ -11,13 +11,17 @@ namespace SkillTree.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
     public partial class AccountBook
     {
         public System.Guid Id { get; set; }
+        [Display(Name = "類型")]
         public int Categoryyy { get; set; }
+        [Display(Name = "金額")]
         public int Amounttt { get; set; }
+        [Display(Name = "日期")]
         public System.DateTime Dateee { get; set; }
+        [Display(Name = "註記")]
         public string Remarkkk { get; set; }
     }
 }
