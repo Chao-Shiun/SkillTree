@@ -79,3 +79,4 @@ C:\Users\s9311\Desktop\SkillTree\SkillTree\bin\Microsoft.Owin.Security.Twitter.x
 C:\Users\s9311\Desktop\SkillTree\SkillTree\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\s9311\Desktop\SkillTree\SkillTree\obj\Debug\SkillTree.dll
 C:\Users\s9311\Desktop\SkillTree\SkillTree\obj\Debug\SkillTree.pdb
+C:\Users\s9311\Desktop\SkillTree\SkillTree\obj\Debug\SkillTree.csprojResolveAssemblyReference.cache
