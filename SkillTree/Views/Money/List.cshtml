@@ -1,37 +1,37 @@
-﻿@model IEnumerable<SkillTree.Models.Money>
+﻿@model IEnumerable<SkillTree.Models.SkillTreeHomeworkEntities>
 @{
     Layout = "";
 }
 <table class="table table-hover">
     <th>
 
-        @Html.DisplayNameFor(model => model.Category)
+        @Html.DisplayNameFor(model => model.Categoryyy)
     </th>
     <th>
-        @Html.DisplayNameFor(model => model.Amount)
+        @Html.DisplayNameFor(model => model.Amountttt)
     </th>
     <th>
-        @Html.DisplayNameFor(model => model.Date)
+        @Html.DisplayNameFor(model => model.Dateeee)
     </th>
     <th>
-        @Html.DisplayNameFor(model => model.Description)
+        @Html.DisplayNameFor(model => model.Remarkkk)
     </th>
     @foreach (var item in Model)
     {
         <tr>
             <td>
-                <div style="color:@(item.Category=="存入"?"Blue":"Red")">
-                    @Html.DisplayFor(modelItem => item.Category)
+                <div>
+                    @Html.DisplayFor(modelItem => item.Categoryyy)
                 </div>
             </td>
             <td>
-                $@Html.DisplayFor(modelItem => item.Amount)
+                $@Html.DisplayFor(modelItem => item.Amountttt)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
+                @Html.DisplayFor(modelItem => item.Dateeee)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                @Html.DisplayFor(modelItem => item.Remarkkk)
             </td>
         </tr>
     }
