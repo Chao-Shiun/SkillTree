@@ -1,21 +1,24 @@
-﻿@model IEnumerable<SkillTree.Models.SkillTreeHomeworkEntities>
+﻿@model IEnumerable<SkillTree.Models.AccountBook>
 @{
     Layout = "";
 }
 <table class="table table-hover">
-    <th>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoryyy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amounttt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dateee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remarkkk)
+        </th>
+        <th></th>
+    </tr>
 
-        @Html.DisplayNameFor(model => model.Categoryyy)
-    </th>
-    <th>
-        @Html.DisplayNameFor(model => model.Amountttt)
-    </th>
-    <th>
-        @Html.DisplayNameFor(model => model.Dateeee)
-    </th>
-    <th>
-        @Html.DisplayNameFor(model => model.Remarkkk)
-    </th>
     @foreach (var item in Model)
     {
         <tr>
@@ -25,10 +28,10 @@
                 </div>
             </td>
             <td>
-                $@Html.DisplayFor(modelItem => item.Amountttt)
+                $@Html.DisplayFor(modelItem => item.Amounttt)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Dateeee)
+                @Html.DisplayFor(modelItem => item.Dateee)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Remarkkk)
