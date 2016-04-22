@@ -30,12 +30,17 @@
         <tr>
             <td>@(++i)</td>
             <td>
-                <div>
-                    @Html.DisplayFor(modelItem => item.Categoryyy)
-                </div>
+                @if (item.Categoryyy == 1)
+                {
+                    <span style="color:red">支出</span>
+                }
+                else
+                {
+                    <span style="color:lawngreen">收入</span>
+                }
             </td>
             <td>
-                $@Html.DisplayFor(modelItem => item.Amounttt)
+                @Html.DisplayFor(modelItem => item.Amounttt)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Dateee)
